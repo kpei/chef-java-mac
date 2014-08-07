@@ -21,8 +21,11 @@
 #
 
 default['java-mac']['type'] = 'JDK'
+
+default['java-mac']['jdk']['app_name'] = "JDK 7 Update 25"
 default['java-mac']['jdk']['download'] = "http://download.oracle.com/otn-pub/java/jdk/7u25-b15/jdk-7u25-macosx-x64.dmg"
 default['java-mac']['jdk']['checksum'] = "d91d29d969f140f745b2e771e3f985a271bf54e97c4869b50143f4d27b5fce1b"
 
+default['java-mac']['jre']['app_name'] = "Java 7 Update 25"
 default['java-mac']['jre']['download'] = "http://download.oracle.com/otn-pub/java/jdk/7u25-b15/jre-7u25-macosx-x64.dmg"
 default['java-mac']['jre']['checksum'] = "b89996e10f833187d56cd7a740934dbca8232a7337e0250163f82039bacf7324"

@@ -27,7 +27,7 @@ jre_file_name = node['java-mac']['jre']['download'].split('/')[-1].split('.')[0]
 case node['java-mac']['type']
   when 'JRE'
     dmg_package jre_file_name do
-      app 'Java Runtime Environment 7'
+      app node['java-mac']['jre']['app_name']
       type 'pkg'
       source   node['java-mac']['jre']['download']
       checksum node['java-mac']['jre']['checksum']
@@ -37,7 +37,7 @@ case node['java-mac']['type']
     end
   when 'JDK'
     dmg_package jdk_file_name do
-      app 'Java Development Kit 7'
+      app node['java-mac']['jdk']['app_name']
       type 'pkg'
       source   node['java-mac']['jdk']['download']
       checksum node['java-mac']['jdk']['checksum']

@@ -7,13 +7,15 @@ change download locations. The current and new attribute parameters are specifie
 Attributes
 ============
 
-* `default['java-mac']['type']` - Specify whether to install Java Development kit [JDK] or Java Runtime Environment [JRE]
+`default['java-mac']['type']` - Specify whether to install Java Development kit [JDK] or Java Runtime Environment [JRE]
 
-* `default['java-mac']['jdk']['download']` - Download location of the JDK, this can be retrieved from the Java Oracle website.  Make sure the /otn-pub/ is present in the link
-* `default['java-mac']['jdk']['checksum']` - SHA256 Checksum of the JDK .dmg file to prevent Chef from downloading the package each iteration
+`default['java-mac']['jdk']['app_name']` - Application name by default for the /Volumes directory and the .app directory copied to /Applications.  Default should be "JDK 7 Update *" where * equal the update number
+`default['java-mac']['jdk']['download']` - Download location of the JDK, this can be retrieved from the Java Oracle website.  Make sure the /otn-pub/ is present in the link
+`default['java-mac']['jdk']['checksum']` - SHA256 Checksum of the JDK .dmg file to prevent Chef from downloading the package each iteration
 
-* `default['java-mac']['jre']['download']` - Download location of the JRE, this can be retrieved from the Java Oracle website.  Make sure the /otn-pub/ is present in the link
-* `default['java-mac']['jre']['checksum']` - SHA256 Checksum of the JRE .dmg file to prevent Chef from downloading the package each iteration
+`default['java-mac']['jre']['app_name']` - Application name by default for the /Volumes directory and the .app directory copied to /Applications.  Default should be "Java 7 Update *" where * equal the update number
+`default['java-mac']['jre']['download']` - Download location of the JRE, this can be retrieved from the Java Oracle website.  Make sure the /otn-pub/ is present in the link
+`default['java-mac']['jre']['checksum']` - SHA256 Checksum of the JRE .dmg file to prevent Chef from downloading the package each iteration
 
 Requirements
 ============
